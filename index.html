@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Santiago Portacio Peralta — Dev & Math</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- CURSOR -->
+        <div class="cursor" id="cursor"></div>
+        <div class="cursor-ring" id="cursorRing"></div>
+
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <a class="logo" href="#">spp<span>.</span>dev</a>
+            <ul class="nav-links">
+                <li><a href="#about">sobre mí</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">proyectos</a></li>
+                <li><a href="#experience">experiencia</a></li>
+                <li><a href="#contact">contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about">sobre mí</a>
+            <a href="#skills">skills</a>
+            <a href="#projects">proyectos</a>
+            <a href="#experience">experiencia</a>
+            <a href="#contact">contacto</a>
+        </div>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-inner">
+                <div class="hero-left">
+                    <div class="hero-tag">disponible para proyectos</div>
+                    <h1 class="name">
+                        Santiago<br /><span class="accent">Portacio</span
+                        ><br />Peralta
+                    </h1>
+                    <p class="hero-role">
+                        // Lic. en Matemáticas · Desarrollador
+                    </p>
+                    <p class="hero-desc">
+                        Apasionado por las <strong>matemáticas</strong> y el
+                        desarrollo de software. Construyo soluciones donde la
+                        lógica formal se encuentra con el
+                        <strong>código limpio</strong>.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary"
+                            >ver proyectos</a
+                        >
+                        <a href="#contact" class="btn btn-outline">contactar</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="terminal">
+                        <div class="term-bar">
+                            <div class="term-dot r"></div>
+                            <div class="term-dot y"></div>
+                            <div class="term-dot g"></div>
+                            <span class="term-title">santiago@dev:~</span>
+                        </div>
+                        <div class="term-body">
+                            <pre>
+<span class="m">$</span> <span class="g">whoami</span>
+<span class="w">Santiago Portacio Peralta</span>
+
+<span class="m">$</span> <span class="g">cat about.txt</span>
+    /\_____/\
+   /  o   o  \    <span class="g">estudiante de matemáticas</span>
+  ( ==  ^  == )   <span class="w">apasionado por el código</span>
+   )  ~cat~  (    <span class="m">construyendo cosas chidas</span>
+  (  purr..  )
+ ( (  )   (  ) )
+(__(__)___(__)__)
+
+<span class="m">$</span> <span class="g">ls skills/</span>
+<span class="w">Go  C++  Rust  JS  HTML  CSS
+PostgreSQL  Git  Matemáticas</span>
+</pre>
+                            <div class="term-line">
+                                <span class="term-prompt">$</span>
+                                <span class="term-input" id="typeTarget"></span>
+                                <span class="term-cursor-blink"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <div class="section-sep"></div>
+        <section class="section reveal" id="about">
+            <p class="section-label">sobre mí</p>
+            <h2 class="s-title">¿Quién soy?</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Soy <strong>Santiago Portacio Peralta</strong>,
+                        estudiante de Licenciatura en Matemáticas con una fuerte
+                        inclinación hacia el desarrollo de software. Me interesa
+                        la intersección entre la
+                        <strong>teoría matemática</strong> y la implementación
+                        computacional.
+                    </p>
+                    <p>
+                        Trabajo con lenguajes de sistemas como
+                        <strong>Go, C++ y Rust</strong>, donde el control y el
+                        rendimiento importan. También construyo interfaces web y
+                        manejo bases de datos relacionales con
+                        <strong>PostgreSQL</strong>.
+                    </p>
+                    <p>
+                        Cuando no estoy programando, probablemente estoy
+                        resolviendo un problema de análisis o explorando algún
+                        concepto matemático que luego termina en código.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-num">9</div>
+                        <div class="stat-label">tecnologías dominadas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">∞</div>
+                        <div class="stat-label">curiosidad matemática</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">4+</div>
+                        <div class="stat-label">proyectos personales</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">01</div>
+                        <div class="stat-label">desarrollador / matemático</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <div class="section-sep"></div>
+        <section class="section reveal" id="skills">
+            <p class="section-label">habilidades</p>
+            <h2 class="s-title">Skills &amp; Tecnologías</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <p class="skill-cat">// lenguajes de sistemas</p>
+                    <div class="tags">
+                        <span class="tag">Go</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Rust</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <p class="skill-cat">// web & frontend</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <p class="skill-cat">// datos & versiones</p>
+                    <div class="tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📐</div>
+                    <p class="skill-cat">// matemáticas</p>
+                    <div class="tags">
+                        <span class="tag">Álgebra Lineal</span>
+                        <span class="tag">Cálculo</span>
+                        <span class="tag">Estadística</span>
+                        <span class="tag">Lógica</span>
+                        <span class="tag">Análisis Numérico</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🧠</div>
+                    <p class="skill-cat">// conceptos</p>
+                    <div class="tags">
+                        <span class="tag">Estructuras de datos</span>
+                        <span class="tag">Algoritmos</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <p class="skill-cat">// entorno</p>
+                    <div class="tags">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Neovim</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <div class="section-sep"></div>
+        <section class="section reveal" id="projects">
+            <p class="section-label">trabajos</p>
+            <h2 class="s-title">Proyectos</h2>
+            <div class="projects-grid">
+                <div class="proj-card" data-n="01">
+                    <p class="proj-lang">// Go · PostgreSQL</p>
+                    <p class="proj-name">Proyecto 01</p>
+                    <p class="proj-desc">
+                        Describe tu proyecto aquí. ¿Qué hace? ¿Qué problema
+                        resuelve? Reemplaza este texto por la descripción real.
+                    </p>
+                    <div class="proj-stack">
+                        <span>Go</span><span>PostgreSQL</span><span>REST</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="#" class="proj-link">GitHub →</a>
+                        <a href="#" class="proj-link">Demo →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-n="02">
+                    <p class="proj-lang">// C++ · Algoritmos</p>
+                    <p class="proj-name">Proyecto 02</p>
+                    <p class="proj-desc">
+                        Describe tu proyecto aquí. ¿Qué hace? ¿Qué problema
+                        resuelve? Reemplaza este texto por la descripción real.
+                    </p>
+                    <div class="proj-stack">
+                        <span>C++</span><span>Algoritmos</span
+                        ><span>Matemáticas</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="#" class="proj-link">GitHub →</a>
+                        <a href="#" class="proj-link">Demo →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-n="03">
+                    <p class="proj-lang">// Rust · Systems</p>
+                    <p class="proj-name">Proyecto 03</p>
+                    <p class="proj-desc">
+                        Describe tu proyecto aquí. ¿Qué hace? ¿Qué problema
+                        resuelve? Reemplaza este texto por la descripción real.
+                    </p>
+                    <div class="proj-stack">
+                        <span>Rust</span><span>Systems</span
+                        ><span>Performance</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="#" class="proj-link">GitHub →</a>
+                        <a href="#" class="proj-link">Demo →</a>
+                    </div>
+                </div>
+
+                <div class="proj-card" data-n="04">
+                    <p class="proj-lang">// JS · HTML · CSS</p>
+                    <p class="proj-name">Proyecto 04</p>
+                    <p class="proj-desc">
+                        Describe tu proyecto aquí. ¿Qué hace? ¿Qué problema
+                        resuelve? Reemplaza este texto por la descripción real.
+                    </p>
+                    <div class="proj-stack">
+                        <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="#" class="proj-link">GitHub →</a>
+                        <a href="#" class="proj-link">Demo →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <div class="section-sep"></div>
+        <section class="section reveal" id="experience">
+            <p class="section-label">trayectoria</p>
+            <h2 class="s-title">Experiencia</h2>
+            <div class="timeline">
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <p class="tl-year">2026 — presente</p>
+                    <p class="tl-role">Estudiante · Lic. en Matemáticas</p>
+                    <p class="tl-place">Universidad Universidad de sucre</p>
+                    <p class="tl-desc">
+                        Formación sólida en análisis matemático, álgebra lineal,
+                        estadística, lógica formal y métodos numéricos.
+                        Aplicación de fundamentos matemáticos en proyectos de
+                        software y desarrollo de algoritmos computacionales
+                        eficientes.
+                    </p>
+                </div>
+
+                <div class="tl-item">
+                    <span class="tl-dot"></span>
+                    <p class="tl-year">2023 — presente</p>
+                    <p class="tl-role">Desarrollador Independiente</p>
+                    <p class="tl-place">Proyectos personales</p>
+                    <p class="tl-desc">
+                        Desarrollo autodidacta en Go, Rust y C++. Construcción
+                        de proyectos propios enfocados en rendimiento y
+                        sistemas. Aprendizaje de bases de datos relacionales con
+                        PostgreSQL y flujos de trabajo con Git y GitHub.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <div class="section-sep"></div>
+        <div id="contact">
+            <div id="contact-wrap" class="reveal">
+                <p class="section-label">contacto</p>
+                <h2 class="s-title">Hablemos</h2>
+                <p class="contact-sub">
+                    ¿Tienes un proyecto interesante, quieres colaborar<br />
+                    o simplemente saludar? Escríbeme.
+                </p>
+                <a href="mailto:tucorreo@email.com" class="btn btn-primary"
+                    >enviar email</a
+                >
+                <div class="social-row">
+                    <a
+                        href="https://github.com/tuusuario"
+                        target="_blank"
+                        class="social-link"
+                        >github</a
+                    >
+                    <a
+                        href="https://linkedin.com/in/tuusuario"
+                        target="_blank"
+                        class="social-link"
+                        >linkedin</a
+                    >
+                    <a
+                        href="https://twitter.com/tuusuario"
+                        target="_blank"
+                        class="social-link"
+                        >twitter</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <span>© 2025 Santiago Portacio Peralta</span>
+            <div class="footer-links">
+                <a href="#hero">inicio</a>
+                <a href="#projects">proyectos</a>
+                <a href="#contact">contacto</a>
+            </div>
+            <span>hecho con matemáticas y café ☕</span>
+        </footer>
+
+        <!-- SCROLL TO TOP -->
+        <button
+            id="top-btn"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+            ↑
+        </button>
+        <script src="main.js"></script>
+    </body>
+</html>
